@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 permalink: /About/
 title: "About Me"
 ---
