@@ -1,7 +1,7 @@
 ---
-layout: archive
+layout: article
 permalink: /
-title: "Latest Posts"
+title: "About Me"
 ---
 
 Hi! My name is Alya Mutiara, or in short Alya. I am an aspiring and self-taught data analyst that had 3+ years experience as a Cloud System Engineer.
