@@ -1,6 +1,9 @@
 # Site navigation links
 
-- title:
-  url:
+- title: Resume
+  url: /resume/
   excerpt:
   image:
+
+- title: Portfolio
+  url: /portfolio/
