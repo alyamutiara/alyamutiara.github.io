@@ -1,6 +1,6 @@
 ---
 layout: article
-permalink: /
+permalink: /About/
 title: "About Me"
 ---
 
