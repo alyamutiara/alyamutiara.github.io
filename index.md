@@ -2,7 +2,7 @@
 layout: article
 permalink: /
 share: true
-title: "About Me"
+title: 
 image:
     feature: alya.jpeg
 ---
