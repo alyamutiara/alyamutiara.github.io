@@ -1,7 +1,7 @@
 ---
 layout: article
 permalink: /
-share: true
+share: false
 title: 
 image:
 ---
