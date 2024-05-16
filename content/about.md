@@ -2,7 +2,8 @@
 title: About
 description: "Page to tells about myself"
 layout: simple
-showTableOfContents: true
+cascade:
+    showTableOfContents: true
 ---
 
 ## Summary
