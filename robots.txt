@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alyamutiara.github.io/sitemap.xml
