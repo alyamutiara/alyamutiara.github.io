@@ -2,6 +2,7 @@
 title: "MovieNow: Fictitious Movie Rental Analysis"
 date: 2024-02-16
 tags: ["SQL", "EDA"]
+---
 
 [Movie Rental][def]  
 
