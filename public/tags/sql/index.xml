@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alya&#39;s Portfolio Website on Alya Mutiara</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Alya&#39;s Portfolio Website on Alya Mutiara</description>
+    <title>SQL on Alya Mutiara</title>
+    <link>http://localhost:1313/tags/sql/</link>
+    <description>Recent content in SQL on Alya Mutiara</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MovieNow: Fictitious Movie Rental Analysis</title>
       <link>http://localhost:1313/portfolio/movienow/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/movienow/</guid>
       <description>Photo by Sean Benesh on Unsplash Introduction #Since I finished my thesis defense, I’ve been learning SQL, and I want to practice and implement my knowledge so that I won’t end up in the Tutorial Hell Loop.</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Summary #Highly motivated Computational Science graduate with 3+ years of experience in cloud engineering seeking to leverage technical expertise in data management and big data technologies for a data engineering role.</description>
     </item>
   </channel>
 </rss>

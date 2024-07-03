@@ -12,13 +12,22 @@ Highly motivated Computational Science graduate with 3+ years of experience in c
 
 ## Education
 
-- 2020: **MSc in Computational Science** -- Institut Teknologi Bandung, Indonesia
-- 2014: **Bsc in Physics** -- Institut Teknologi Bandung, Indonesia
+- 2020: **MSc in Computational Science** -- Institut Teknologi Bandung, Indonesia<br>
+  - Published research in the Journal of Physics, "Pedestrian Evacuation Modeling Using Agent-Based Model and Social-Force Model." Utilized NetLogo, a leading agent-based modeling software, to investigate pedestrian behavior during evacuations.
+- 2014: **Bsc in Physics** -- Institut Teknologi Bandung, Indonesia<br>
+  - Gained practical experience in laboratory management through a one-year role as Coordinator of Assistants for the Electromagnetic Laboratory. Responsibilities included preparing materials, scheduling experiments, and maintaining a functional lab environment.
+  - Authored a thesis investigating the comparative effectiveness of Static and Dynamic Multileaf Collimators in Intensity Modulated Radiation Therapy, utilizing Dose Volume Histogram Analysis. Leveraged tools like MATLAB, Python, spreadsheets, and SPSS to perform the analysis, employing paired-sample T-test statistics for data evaluation.
+
 
 ## Experience
 
-- 2024 - Present: **Data Engineer** - Data Fellowship at IYKRA -- Jakarta, ID
-- 2019 - 2022: **Cloud Engineer** at Xtremax -- Bandung, ID
+- 2024 - Present: **Data Engineer** - Data Fellowship at IYKRA -- Jakarta, ID<br>
+    *IYKRA is a Consulting, Training, and Implementation company focusing on technology development in AI, Big Data, and Analytics for enterprises and individuals. Among the programs offered by IYKRA is the Data Fellowship, designed to accelerate the journey of aspiring young Indonesian individuals pursuing careers as Data Engineers.*
+  - Selected as one of 20 Data Fellowship Batch 12 students, awarded a fully funded scholarship to complete an intensive 4-month comprehensive data engineering curriculum.
+  - Led a team of five in building a customer segmentation model (capstone project: "Building Customer Segmentation for Effective Personalized Marketing") that earned the Best Capstone Project distinction.
+  - Developed end-to-end data pipelines that ingested data from data lakes (GCP), performed transformations using big data tools (Airflow, dbt, Apache Kafka, Apache NiFi, BigQuery), and delivered results through data visualizations (Looker, Tableau).
+  - Leveraged dbt to transform and ingest data into Google BigQuery as a data warehouse.
+- 2019 - 2022: **Cloud Engineer** at Xtremax -- Bandung, ID <br>
     *Xtremax is a certified digital transformation company providing innovative cloud solutions. Headquartered in Singapore, Xtremax has assisted numerous clients in large-scale server migration, cloud migration, application modernization, containerized services, and more.*
   - Maintained and optimized over 20 internal servers on AWS EC2, utilizing Load Balancers and Auto Scaling Groups. This work on the Content Website Platform project ensured seamless operations, proactive troubleshooting, and continuous enhancements.
   - Remediated and addressed over 500 vulnerability findings within cloud servers and infrastructure using the Nexpose vulnerability scanner. This work fortified security and minimized potential risks, resulting in a 70% reduction in security incidents.
@@ -34,7 +43,10 @@ Highly motivated Computational Science graduate with 3+ years of experience in c
 - **Visualization**: Looker Studio, Tableau
 - **Workflow Management**: Airflow
 - **Computational physics**: Agent-Based Modeling
-- 
+- **Data Warehouse**: BigQuery
+- **Data Transformation**: data build tool (dbt)
+- **Data Processing**: Apacke Kafka, Apache Nifi
+- **Container**: Docker
 
 ## Certificates
 - **Google Data Analytics** (2024)
