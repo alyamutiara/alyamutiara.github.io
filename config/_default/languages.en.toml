@@ -15,7 +15,7 @@ title = "Alya Mutiara"
 [params.author]
   name = "Alya Mutiara F"
   image = "img/photo-profile.jpg"
-  headline = "Aspiring to be a Data Professional"
+  headline = "Data Engineer | Cloud Enthusiast"
   # bio = "A little bit about you"
   links = [
     { email = "mailto:alyafirdausyi@gmail.com" },
