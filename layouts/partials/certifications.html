@@ -1,0 +1,25 @@
+<section class="section reveal" id="certifications">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__number">05</span>
+      <h2 class="section__title">Certifications</h2>
+    </div>
+    <div class="certs__grid">
+      {{ range hugo.Data.certifications }}
+      <a href="{{ .link }}" class="cert-card" target="_blank" rel="noopener noreferrer">
+        <div class="cert-card__icon">
+          <i class="{{ .icon }}"></i>
+        </div>
+        <div class="cert-card__info">
+          <h3 class="cert-card__name">{{ .name }}</h3>
+          <p class="cert-card__issuer">{{ .issuer }}</p>
+        </div>
+        <div class="cert-card__meta">
+          <span class="cert-card__year">{{ .year }}</span>
+          <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>

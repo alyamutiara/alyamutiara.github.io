@@ -1,0 +1,23 @@
+<section class="section section--alt reveal" id="education">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__number">06</span>
+      <h2 class="section__title">Education</h2>
+    </div>
+    <div class="edu__list">
+      {{ range hugo.Data.education }}
+      <div class="edu__item">
+        <h3 class="edu__institution">{{ .institution }}</h3>
+        <div class="edu__degrees">
+          {{ range .degrees }}
+          <div class="edu__degree">
+            <span class="edu__degree-name">{{ .degree }}</span>
+            <span class="edu__degree-period">{{ .period }}</span>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,3 +1,30 @@
-baseURL = 'https://alyamutiara.github.io'
-languageCode = 'en-us'
-title = 'Alya Mutiara'
+baseURL = "https://alyamutiara.github.io/"
+locale = "en-us"
+title = "Alya Mutiara — Portfolio"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  description = "Alya Mutiara — Data Engineer specializing in scalable data platforms, ETL/ELT pipelines, and cloud-native infrastructure."
+  author = "Alya Mutiara"
+  location = "Tangerang, ID"
+
+  [params.hero]
+    headline = "Data Engineer."
+    subtext = "I design and build scalable data platforms, cross-cloud pipelines, and real-time streaming systems that turn raw data into reliable, production-grade infrastructure. Formerly in cloud — now shaping how data flows through it."
+    cta = "View My Work"
+
+  [params.about]
+    summary = "Experienced Data Engineer specializing in designing and implementing scalable, cross-cloud data platforms and warehouse solutions to support advanced business and finance reporting. Proven expertise in orchestrating workflows using Airflow, managing large-scale ETL/ELT processes across GCP and AWS, and building robust real-time streaming solutions with Kafka. Strong command of SQL, Python, and Java, with experience in implementing CI/CD pipelines to ensure reliable, high-quality data delivery and deployment automation."
+
+  [params.social]
+    linkedin = "https://linkedin.com/in/alyamf"
+    github = "https://github.com/alyamutiara"
+    medium = "https://medium.com/@mutiaraa"
+    email = "mailto:alyafirdausyi@gmail.com"
+
+  resumeUrl = "https://github.com/alyamutiara/data-engineering-portfolio/blob/main/asset/resume.pdf"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

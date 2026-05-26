@@ -1,0 +1,31 @@
+<section class="section reveal" id="projects">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__number">03</span>
+      <h2 class="section__title">Projects</h2>
+    </div>
+    <div class="projects__grid">
+      {{ range first 4 hugo.Data.projects }}
+      <article class="project-card">
+        <div class="project-card__accent" aria-hidden="true"></div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">{{ .title }}</h3>
+          <p class="project-card__description">{{ .description }}</p>
+          <p class="project-card__impact">{{ .impact }}</p>
+          <div class="project-card__tech">
+            {{ range .tech }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        <a href="{{ .link }}" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          View Project &rarr;
+        </a>
+      </article>
+      {{ end }}
+    </div>
+    <div class="projects__see-all">
+      <a href="/projects/" class="projects__see-all-link">See All Projects &rarr;</a>
+    </div>
+  </div>
+</section>

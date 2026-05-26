@@ -1,0 +1,31 @@
+<section class="section section--alt reveal" id="experience">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__number">02</span>
+      <h2 class="section__title">Experience</h2>
+    </div>
+    <div class="timeline">
+      {{ range hugo.Data.experience }}
+      <div class="timeline__item">
+        {{ if eq .type "fellowship" }}<span class="timeline__badge">Fellowship</span>{{ end }}
+        <div class="timeline__header">
+          <div>
+            <h3 class="timeline__role">{{ .role }}</h3>
+            <p class="timeline__company">{{ .company }}</p>
+          </div>
+          <div class="timeline__meta">
+            <span class="timeline__period">{{ .period }}</span>
+            {{ if .location }}<span class="timeline__location">{{ .location }}</span>{{ end }}
+          </div>
+        </div>
+        <p class="timeline__description">{{ .description }}</p>
+        <ul class="timeline__highlights">
+          {{ range .highlights }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

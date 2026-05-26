@@ -1,0 +1,61 @@
+- title: "Customer Segmentation & CLV Prediction Pipeline"
+  description: "End-to-end automated ML pipeline for customer lifetime value prediction and segmentation using RFM analysis. Built with Medallion architecture on GCP, integrating data quality checks and interactive dashboards."
+  tech:
+    - "Python"
+    - "BigQuery"
+    - "Airflow"
+    - "dbt"
+    - "Docker"
+    - "Looker Studio"
+  impact: "Automated customer segmentation reducing manual analysis time by 80%, enabling data-driven marketing strategies."
+  link: "https://github.com/alyamutiara/customer-segmentation-prediction"
+
+- title: "Attendance ETL Pipeline"
+  description: "Scalable ETL pipeline for university attendance data processing with Docker containerization. Three-layer architecture (Staging → Warehouse → Mart) with automated weekly reporting."
+  tech:
+    - "Python"
+    - "PostgreSQL"
+    - "Docker"
+    - "pandas"
+  impact: "Three-layer Medallion architecture with containerized deployment; automated weekly attendance reporting."
+  link: "https://github.com/alyamutiara/attendance-etl-pipeline"
+
+- title: "BigQuery Data Ingestion Pipeline"
+  description: "Data ingestion pipeline from local PostgreSQL to BigQuery using Python transformation and Cloud SQL. Processes banking fraud detection dataset through a clean data flow."
+  tech:
+    - "Python"
+    - "BigQuery"
+    - "PostgreSQL"
+    - "GCP Cloud SQL"
+    - "pandas"
+  impact: "End-to-end data flow from local CSV through transformation to BigQuery data warehouse."
+  link: "https://github.com/alyamutiara/bq-data-ingestion"
+
+- title: "CI/CD Pipeline for AWS Glue Jobs"
+  description: "Production-ready CI/CD pipeline automating AWS Glue job deployment using Azure DevOps with multi-environment support (DEV/PRD), smart change detection, and S3 Tables integration with Apache Iceberg."
+  tech:
+    - "AWS Glue"
+    - "AWS S3"
+    - "Azure DevOps"
+    - "Python"
+    - "boto3"
+    - "Apache Iceberg"
+  impact: "Reduced manual deployment time from hours to minutes; zero-downtime deployments across environments."
+  link: "https://github.com/alyamutiara/data-engineering-portfolio"
+
+- title: "Stock Market Dashboard"
+  description: "Interactive stock market analysis dashboard visualizing market trends, trading volumes, and performance metrics with drill-down capabilities."
+  tech:
+    - "Tableau"
+    - "Python"
+  impact: "Enables quick identification of market patterns and trading opportunities through visual analytics."
+  link: "https://github.com/alyamutiara/dashboard-stock"
+
+- title: "Online Rental Movies Analysis"
+  description: "Comprehensive SQL analysis of an online movie rental platform exploring customer behavior, revenue patterns, actor popularity, and subscription trends."
+  tech:
+    - "SQL"
+    - "SQLite"
+    - "Jupyter Notebook"
+  impact: "Delivered insights on customer demographics, revenue patterns, and subscription behavior."
+  link: "https://github.com/alyamutiara/data-engineering-portfolio"

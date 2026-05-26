@@ -1,0 +1,23 @@
+- name: "AWS Data Engineer Associate"
+  year: "2024"
+  issuer: "Amazon Web Services"
+  icon: "devicon-amazonwebservices-plain-wordmark"
+  link: "https://www.credly.com/badges/3bdeda8e-69ae-4ea0-9800-aea15d24e759"
+
+- name: "AWS Solution Architect Associate"
+  year: "2022"
+  issuer: "Amazon Web Services"
+  icon: "devicon-amazonwebservices-plain-wordmark"
+  link: "https://www.credly.com/badges/004db99c-a05a-4bf2-8e71-1d8e3de73490/public_url"
+
+- name: "Microsoft Certified: Azure Fundamentals"
+  year: "2023"
+  issuer: "Microsoft"
+  icon: "devicon-azure-plain"
+  link: "https://learn.microsoft.com/en-gb/users/AlyaFirdausyi-1081/credentials/FE76906AC590BF6A"
+
+- name: "Google Data Analytics"
+  year: "2024"
+  issuer: "Google"
+  icon: "devicon-google-plain"
+  link: "https://github.com/alyamutiara/data-engineering-portfolio/blob/main/certificate.md"
