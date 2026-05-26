@@ -1,15 +1,15 @@
 baseURL = "https://alyamutiara.github.io/"
 locale = "en-us"
-title = "Alya Mutiara — Portfolio"
+title = "Alya Firdausyi — Portfolio"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
 [params]
-  description = "Alya Mutiara — Data Engineer specializing in scalable data platforms, ETL/ELT pipelines, and cloud-native infrastructure."
-  author = "Alya Mutiara"
+  description = "Alya Firdausyi — Data Engineer specializing in scalable data platforms, ETL/ELT pipelines, and cloud-native infrastructure."
+  author = "Alya Firdausyi"
   location = "Tangerang, ID"
 
   [params.hero]
-    headline = "Data Engineer."
+    headline = "Alya Firdausyi."
     subtext = "I design and build scalable data platforms, cross-cloud pipelines, and real-time streaming systems that turn raw data into reliable, production-grade infrastructure. Formerly in cloud — now shaping how data flows through it."
     cta = "View My Work"
 
