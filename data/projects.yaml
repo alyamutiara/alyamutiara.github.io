@@ -1,11 +1,12 @@
-- title: "Banking Dummy Pipeline"
+- title: "SemestaBank Banking Pipeline"
   category: "Data Engineering"
-  description: "Data pipeline processing dummy banking transactions with data validation, transformation, and loading. Implements robust error handling and data quality checks."
+  description: "Data pipeline processing banking transactions with data validation, transformation, and loading. Implements robust error handling and data quality checks."
   tech:
     - "Python"
     - "PostgreSQL"
-    - "pandas"
+    - "PySpark"
     - "Docker"
+    - "Airflow"
   impact: "Automated banking data processing pipeline with built-in data validation and transformation workflows."
   link: "https://github.com/alyamutiara/banking-dummy-pipeline"
 
@@ -28,18 +29,17 @@
     - "AWS S3"
     - "Azure DevOps"
     - "Python"
-    - "boto3"
-    - "Apache Iceberg"
   impact: "Reduced manual deployment time from hours to minutes; zero-downtime deployments across environments."
   link: "https://github.com/alyamutiara/data-engineering-portfolio"
 
 - title: "Stock Market Dashboard"
   category: "Data Engineering"
-  description: "Interactive stock market analysis dashboard visualizing market trends, trading volumes, and performance metrics with drill-down capabilities."
+  description: "A Python-based data pipeline that fetches data from multiple Invezgo API endpoints and loads them into Google BigQuery."
   tech:
-    - "Tableau"
     - "Python"
-  impact: "Enables quick identification of market patterns and trading opportunities through visual analytics."
+    - "Cloud Run functions"
+    - "BigQuery"
+  impact: "Automated data ingestion from Invezgo API to BigQuery, enabling real-time stock market analysis and visualization."
   link: "https://github.com/alyamutiara/dashboard-stock"
 
 - title: "Attendance ETL Pipeline"
