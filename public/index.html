@@ -10,7 +10,7 @@
     (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
   </script>
   
-  <link rel="stylesheet" href="/css/style.min.5bb74597e2af20953bd316fa6124385c73da8e84d19ee87b18a7fc201b0f8229.css">
+  <link rel="stylesheet" href="/css/style.min.2a4224bbd2b95dfff11834ce2a7043cfa75b3c75300fb3ca2f3bce5383b8cb7c.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -29,6 +29,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav__actions">
@@ -196,8 +197,8 @@
       <article class="project-card">
         <div class="project-card__accent" aria-hidden="true"></div>
         <div class="project-card__body">
-          <h3 class="project-card__title">Banking Dummy Pipeline</h3>
-          <p class="project-card__description">Data pipeline processing dummy banking transactions with data validation, transformation, and loading. Implements robust error handling and data quality checks.</p>
+          <h3 class="project-card__title">SemestaBank Banking Pipeline</h3>
+          <p class="project-card__description">Data pipeline processing banking transactions with data validation, transformation, and loading. Implements robust error handling and data quality checks.</p>
           <p class="project-card__impact">Automated banking data processing pipeline with built-in data validation and transformation workflows.</p>
           <div class="project-card__tech">
             
@@ -205,13 +206,15 @@
             
             <span class="tag">PostgreSQL</span>
             
-            <span class="tag">pandas</span>
+            <span class="tag">PySpark</span>
             
             <span class="tag">Docker</span>
             
+            <span class="tag">Airflow</span>
+            
           </div>
         </div>
-        <a href="https://github.com/alyamutiara/banking-dummy-pipeline" class="project-card__link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/alyamutiara/end-to-end-banking-pipeline" class="project-card__link" target="_blank" rel="noopener noreferrer">
           View Project &rarr;
         </a>
       </article>
@@ -255,10 +258,6 @@
             
             <span class="tag">Python</span>
             
-            <span class="tag">boto3</span>
-            
-            <span class="tag">Apache Iceberg</span>
-            
           </div>
         </div>
         <a href="https://github.com/alyamutiara/data-engineering-portfolio" class="project-card__link" target="_blank" rel="noopener noreferrer">
@@ -270,13 +269,15 @@
         <div class="project-card__accent" aria-hidden="true"></div>
         <div class="project-card__body">
           <h3 class="project-card__title">Stock Market Dashboard</h3>
-          <p class="project-card__description">Interactive stock market analysis dashboard visualizing market trends, trading volumes, and performance metrics with drill-down capabilities.</p>
-          <p class="project-card__impact">Enables quick identification of market patterns and trading opportunities through visual analytics.</p>
+          <p class="project-card__description">A Python-based data pipeline that fetches data from multiple Invezgo API endpoints and loads them into Google BigQuery.</p>
+          <p class="project-card__impact">Automated data ingestion from Invezgo API to BigQuery, enabling real-time stock market analysis and visualization.</p>
           <div class="project-card__tech">
             
-            <span class="tag">Tableau</span>
-            
             <span class="tag">Python</span>
+            
+            <span class="tag">Cloud Run functions</span>
+            
+            <span class="tag">BigQuery</span>
             
           </div>
         </div>
@@ -641,10 +642,25 @@
     </div>
   </div>
 </section>
-<section class="section reveal" id="contact">
+<section class="section reveal" id="blog">
   <div class="container">
     <div class="section__header">
       <span class="section__number">07</span>
+      <h2 class="section__title">Recent Posts</h2>
+    </div>
+    <div class="blog__grid" id="blogGrid">
+      <div class="blog__loading">Loading posts...</div>
+    </div>
+    <div class="blog__see-all">
+      <a href="https://medium.com/@mutiaraa" class="blog__see-all-link" target="_blank" rel="noopener noreferrer">View All on Medium &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="contact">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__number">08</span>
       <h2 class="section__title">Contact</h2>
     </div>
     <p class="contact__text">Open to discussing new opportunities, collaboration, or conversations about data engineering and cloud infrastructure.</p>
@@ -731,6 +747,27 @@
   reveals.forEach(function(el) {
     observer.observe(el);
   });
+
+  (function() {
+    var grid = document.getElementById('blogGrid');
+    if (!grid) return;
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mutiaraa')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (!data.items || data.items.length === 0) {
+          grid.innerHTML = '<div class="blog__loading">No posts found.</div>';
+          return;
+        }
+        var posts = data.items.slice(0, 3);
+        grid.innerHTML = posts.map(function(item) {
+          var date = new Date(item.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+          return '<article class="blog__card"><div class="blog__card-accent" aria-hidden="true"></div><span class="blog__card-date">' + date + '</span><h3 class="blog__card-title">' + item.title + '</h3><a href="' + item.link + '" class="blog__card-link" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a></article>';
+        }).join('');
+      })
+      .catch(function() {
+        grid.innerHTML = '<div class="blog__loading">Could not load posts.</div>';
+      });
+  })();
 })();
 </script>
 
