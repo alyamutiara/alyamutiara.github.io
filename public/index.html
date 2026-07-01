@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme="light">
 <head>
-	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.161.1">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Alya Firdausyi — Data Engineer specializing in scalable data platforms, ETL/ELT pipelines, and cloud-native infrastructure.">
@@ -10,7 +10,7 @@
     (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
   </script>
   
-  <link rel="stylesheet" href="/css/style.min.59bdc729e62c10441522da6db9f294ec954c6f75e6803d15ddf79f801c51145d.css">
+  <link rel="stylesheet" href="/css/style.min.5bb74597e2af20953bd316fa6124385c73da8e84d19ee87b18a7fc201b0f8229.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -62,7 +62,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         </a>
       </div>
-      <a href="" class="hero__resume-link" target="_blank" rel="noopener noreferrer">
+      <a href="/docs/CV%20Alya%20Mutiara%20Firdausyi.pdf" class="hero__resume-link" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         Resume
       </a>
@@ -196,26 +196,22 @@
       <article class="project-card">
         <div class="project-card__accent" aria-hidden="true"></div>
         <div class="project-card__body">
-          <h3 class="project-card__title">Customer Segmentation &amp; CLV Prediction Pipeline</h3>
-          <p class="project-card__description">End-to-end automated ML pipeline for customer lifetime value prediction and segmentation using RFM analysis. Built with Medallion architecture on GCP, integrating data quality checks and interactive dashboards.</p>
-          <p class="project-card__impact">Automated customer segmentation reducing manual analysis time by 80%, enabling data-driven marketing strategies.</p>
+          <h3 class="project-card__title">Banking Dummy Pipeline</h3>
+          <p class="project-card__description">Data pipeline processing dummy banking transactions with data validation, transformation, and loading. Implements robust error handling and data quality checks.</p>
+          <p class="project-card__impact">Automated banking data processing pipeline with built-in data validation and transformation workflows.</p>
           <div class="project-card__tech">
             
             <span class="tag">Python</span>
             
-            <span class="tag">BigQuery</span>
+            <span class="tag">PostgreSQL</span>
             
-            <span class="tag">Airflow</span>
-            
-            <span class="tag">dbt</span>
+            <span class="tag">pandas</span>
             
             <span class="tag">Docker</span>
             
-            <span class="tag">Looker Studio</span>
-            
           </div>
         </div>
-        <a href="https://github.com/alyamutiara/customer-segmentation-prediction" class="project-card__link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/alyamutiara/banking-dummy-pipeline" class="project-card__link" target="_blank" rel="noopener noreferrer">
           View Project &rarr;
         </a>
       </article>
@@ -223,47 +219,22 @@
       <article class="project-card">
         <div class="project-card__accent" aria-hidden="true"></div>
         <div class="project-card__body">
-          <h3 class="project-card__title">Attendance ETL Pipeline</h3>
-          <p class="project-card__description">Scalable ETL pipeline for university attendance data processing with Docker containerization. Three-layer architecture (Staging → Warehouse → Mart) with automated weekly reporting.</p>
-          <p class="project-card__impact">Three-layer Medallion architecture with containerized deployment; automated weekly attendance reporting.</p>
+          <h3 class="project-card__title">Pokemon API</h3>
+          <p class="project-card__description">RESTful API serving Pokemon data with endpoints for querying species, stats, and abilities. Built with modern Python web framework for efficient data retrieval and filtering.</p>
+          <p class="project-card__impact">Scalable API architecture enabling efficient Pokemon data queries with clean endpoint design.</p>
           <div class="project-card__tech">
             
             <span class="tag">Python</span>
             
-            <span class="tag">PostgreSQL</span>
+            <span class="tag">FastAPI</span>
             
-            <span class="tag">Docker</span>
-            
-            <span class="tag">pandas</span>
-            
-          </div>
-        </div>
-        <a href="https://github.com/alyamutiara/attendance-etl-pipeline" class="project-card__link" target="_blank" rel="noopener noreferrer">
-          View Project &rarr;
-        </a>
-      </article>
-      
-      <article class="project-card">
-        <div class="project-card__accent" aria-hidden="true"></div>
-        <div class="project-card__body">
-          <h3 class="project-card__title">BigQuery Data Ingestion Pipeline</h3>
-          <p class="project-card__description">Data ingestion pipeline from local PostgreSQL to BigQuery using Python transformation and Cloud SQL. Processes banking fraud detection dataset through a clean data flow.</p>
-          <p class="project-card__impact">End-to-end data flow from local CSV through transformation to BigQuery data warehouse.</p>
-          <div class="project-card__tech">
-            
-            <span class="tag">Python</span>
-            
-            <span class="tag">BigQuery</span>
+            <span class="tag">REST API</span>
             
             <span class="tag">PostgreSQL</span>
             
-            <span class="tag">GCP Cloud SQL</span>
-            
-            <span class="tag">pandas</span>
-            
           </div>
         </div>
-        <a href="https://github.com/alyamutiara/bq-data-ingestion" class="project-card__link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/alyamutiara/pokemon_api" class="project-card__link" target="_blank" rel="noopener noreferrer">
           View Project &rarr;
         </a>
       </article>
@@ -291,6 +262,25 @@
           </div>
         </div>
         <a href="https://github.com/alyamutiara/data-engineering-portfolio" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          View Project &rarr;
+        </a>
+      </article>
+      
+      <article class="project-card">
+        <div class="project-card__accent" aria-hidden="true"></div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Stock Market Dashboard</h3>
+          <p class="project-card__description">Interactive stock market analysis dashboard visualizing market trends, trading volumes, and performance metrics with drill-down capabilities.</p>
+          <p class="project-card__impact">Enables quick identification of market patterns and trading opportunities through visual analytics.</p>
+          <div class="project-card__tech">
+            
+            <span class="tag">Tableau</span>
+            
+            <span class="tag">Python</span>
+            
+          </div>
+        </div>
+        <a href="https://github.com/alyamutiara/dashboard-stock" class="project-card__link" target="_blank" rel="noopener noreferrer">
           View Project &rarr;
         </a>
       </article>
@@ -659,7 +649,7 @@
     </div>
     <p class="contact__text">Open to discussing new opportunities, collaboration, or conversations about data engineering and cloud infrastructure.</p>
     <div class="contact__links">
-      <a href="mailto:" class="contact__link contact__link--primary">
+      <a href="mailto:alyafirdausyi@gmail.com" class="contact__link contact__link--primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         
       </a>
@@ -667,7 +657,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
         GitHub
       </a>
-      <a href="" class="contact__link" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/alyamf" class="contact__link" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
