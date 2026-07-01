@@ -7,6 +7,7 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
   description = "Alya Firdausyi — Data Engineer specializing in scalable data platforms, ETL/ELT pipelines, and cloud-native infrastructure."
   author = "Alya Firdausyi"
   location = "Tangerang, ID"
+  resumeUrl = "/docs/CV%20Alya%20Mutiara%20Firdausyi.pdf"
 
   [params.hero]
     headline = "Alya Firdausyi."
@@ -21,8 +22,6 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
     github = "https://github.com/alyamutiara"
     medium = "https://medium.com/@mutiaraa"
     email = "mailto:alyafirdausyi@gmail.com"
-
-  resumeUrl = "https://github.com/alyamutiara/data-engineering-portfolio/blob/main/asset/resume.pdf"
 
 [markup]
   [markup.goldmark]

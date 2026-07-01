@@ -9,11 +9,24 @@
       <span class="section__number">03</span>
       <h2 class="section__title">All Projects</h2>
     </div>
-    <div class="projects__grid projects__grid--full">
+
+    <div class="category-filter" id="categoryFilter">
+      <button class="category-filter__btn active" data-category="all">All</button>
+      {{ $categories := slice }}
       {{ range hugo.Data.projects }}
-      <article class="project-card">
+        {{ $categories = $categories | append .category }}
+      {{ end }}
+      {{ range ($categories | uniq) }}
+      <button class="category-filter__btn" data-category="{{ . }}">{{ . }}</button>
+      {{ end }}
+    </div>
+
+    <div class="projects__grid projects__grid--full" id="projectsGrid">
+      {{ range hugo.Data.projects }}
+      <article class="project-card" data-category="{{ .category }}">
         <div class="project-card__accent" aria-hidden="true"></div>
         <div class="project-card__body">
+          <span class="project-card__category">{{ .category }}</span>
           <h3 class="project-card__title">{{ .title }}</h3>
           <p class="project-card__description">{{ .description }}</p>
           <p class="project-card__impact">{{ .impact }}</p>
@@ -31,5 +44,26 @@
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.category-filter__btn');
+  var cards = document.querySelectorAll('#projectsGrid .project-card');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-category');
+      cards.forEach(function(card){
+        if(cat === 'all' || card.getAttribute('data-category') === cat){
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
 {{ partial "footer.html" . }}
 {{ end }}

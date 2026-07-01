@@ -212,9 +212,41 @@ Deployment is **automatic** via GitHub Actions.
 
 1. Go to your repository → **Settings** → **Pages**
 2. Under **Source**, select **GitHub Actions**
-3. Push to `main` — the workflow runs automatically
+3. Done — every merge to `main` will trigger a deployment
 
-Every push to `main` triggers `.github/workflows/deploy.yml`.
+### Deploying Changes (Full Workflow)
+
+Every time you make changes, follow this flow:
+
+```bash
+# 1. Create a feature branch
+git checkout -b feature/your-change-name
+
+# 2. Make your changes, then commit
+git add .
+git commit -m "Describe your changes"
+
+# 3. Push the branch to GitHub
+git push -u origin feature/your-change-name
+
+# 4. Create a Pull Request (via GitHub CLI or on github.com)
+gh pr create --title "Your PR title" --body "Description of changes"
+```
+
+Then on GitHub:
+1. Review your changes in the PR
+2. Click **Merge pull request** → **Confirm merge**
+3. The GitHub Actions workflow runs automatically (~2-3 min)
+4. Your site is live at **https://alyamutiara.github.io**
+
+### Checking Deployment Status
+
+```bash
+# Via GitHub CLI
+gh run list --workflow=deploy.yml
+
+# Or on GitHub: Actions tab → see the running workflow
+```
 
 ---
 
