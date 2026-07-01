@@ -65,5 +65,26 @@
   reveals.forEach(function(el) {
     observer.observe(el);
   });
+
+  (function() {
+    var grid = document.getElementById('blogGrid');
+    if (!grid) return;
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mutiaraa')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (!data.items || data.items.length === 0) {
+          grid.innerHTML = '<div class="blog__loading">No posts found.</div>';
+          return;
+        }
+        var posts = data.items.slice(0, 3);
+        grid.innerHTML = posts.map(function(item) {
+          var date = new Date(item.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+          return '<article class="blog__card"><div class="blog__card-accent" aria-hidden="true"></div><span class="blog__card-date">' + date + '</span><h3 class="blog__card-title">' + item.title + '</h3><a href="' + item.link + '" class="blog__card-link" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a></article>';
+        }).join('');
+      })
+      .catch(function() {
+        grid.innerHTML = '<div class="blog__loading">Could not load posts.</div>';
+      });
+  })();
 })();
 </script>

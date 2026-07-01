@@ -8,7 +8,7 @@
     - "Docker"
     - "Airflow"
   impact: "Automated banking data processing pipeline with built-in data validation and transformation workflows."
-  link: "https://github.com/alyamutiara/banking-dummy-pipeline"
+  link: "https://github.com/alyamutiara/end-to-end-banking-pipeline"
 
 - title: "Pokemon API"
   category: "Data Engineering"
